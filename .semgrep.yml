@@ -1,0 +1,15 @@
+rules:
+  - id: sql-injection
+    patterns:
+      - pattern: db.get($QUERY, ...)
+      - pattern-inside: |
+          const $QUERY = `SELECT * FROM users WHERE username = '${...}' AND password = '${...}'`
+    message: "Possível SQL Injection detectado. Use prepared statements."
+    severity: ERROR
+    languages: [javascript]
+
+  - id: hardcoded-secret
+    pattern: const $SECRET = $VALUE
+    message: "Segredo hardcoded detectado. Use variáveis de ambiente."
+    severity: WARNING
+    languages: [javascript]
