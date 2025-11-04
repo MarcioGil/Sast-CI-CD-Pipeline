@@ -66,17 +66,24 @@ semgrep --config .semgrep.yml app/
 O workflow de segurança roda automaticamente em todo push/PR para o branch `main`.
 
 
+
 ## Demonstração Visual
 
-- Cenário 1: Pull Request com código vulnerável (workflow falha)
+**Cenário 1:** Pull Request com código vulnerável (workflow falha)
+
 ![Workflow Falhou](assets/screenshot-falha.png)
 
-- Cenário 2: Pull Request corrigido (workflow passa)
+**Cenário 2:** Pull Request corrigido (workflow passa)
+
 ![Workflow Sucesso](assets/screenshot-sucesso.png)
 
 ### Dashboard Dinâmico
 
 Badge de status do build:
+
+![Build Status](https://img.shields.io/github/workflow/status/MarcioGil/Sast-CI-CD-Pipeline/SAST%20Security%20Scan?style=flat-square)
+
+> Substitua os arquivos `assets/screenshot-falha.png` e `assets/screenshot-sucesso.png` pelas imagens reais dos seus workflows.
 
 ![Build Status](https://img.shields.io/github/workflow/status/MarcioGil/Sast-CI-CD-Pipeline/SAST%20Security%20Scan?style=flat-square)
 
