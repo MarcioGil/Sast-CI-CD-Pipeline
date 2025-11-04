@@ -74,9 +74,10 @@ O workflow de segurança roda automaticamente em todo push/PR para o branch `mai
 ![Workflow Falhou](assets/screenshot-falha.png)
 
 
+
 **Cenário 2:** Pull Request corrigido (workflow passa)
 
-![Workflow Sucesso](assets/success.jpg.jpg)
+![Workflow Sucesso](assets/success.jpg)
 
 ### Dashboard Dinâmico
 
