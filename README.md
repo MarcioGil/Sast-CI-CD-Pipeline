@@ -1,6 +1,29 @@
 
 # SAST-CI/CD Pipeline: Prevenção Automatizada de Dívida de Cibersegurança
 
+## Otimização Sugerida
+
+### Por Que Otimizar
+Otimizar a estrutura e documentação do projeto facilita a manutenção, aumenta a clareza para recrutadores e reduz riscos operacionais.
+
+### Estrutura de Pastas
+```bash
+tree
+├── app
+│   ├── index.js
+│   ├── package.json
+│   └── Dockerfile
+├── docker-compose.yml
+├── .semgrep.yml
+├── .github
+│   └── workflows
+│       └── security-scan.yml
+├── assets
+│   ├── success.jpg
+│   └── Screeenshot-sucesso.jpg
+└── README.md
+```
+
 ## Sobre o Autor
 Sou Márcio Gil, estudante de Engenharia de Software, Embaixador da Turma 14 da DIO Campus Expert, apaixonado por tecnologia, educação, inovação e numa constante luta por justiça social. Busco unir conhecimento técnico com impacto social, promovendo soluções seguras e sustentáveis para o desenvolvimento de software.
 
@@ -28,24 +51,13 @@ Este projeto demonstra, de forma prática e didática, como implementar um pipel
 
 ### Estrutura de Pastas
 
-```text
-Sast-CI-CD-Pipeline/
-├── app/
-│   ├── index.js
-│   ├── package.json
-│   └── Dockerfile
-├── docker-compose.yml
-├── .semgrep.yml
-├── .github/
-│   └── workflows/
-│       └── security-scan.yml
-└── README.md
-```
 
 ### Vulnerabilidades Intencionais
 
-- SQL Injection no login
-- Segredo hardcoded no código
+- **SQL Injection no login** (Risco: Possível manipulação de dados e acesso não autorizado ao banco de dados)
+- **Segredo hardcoded no código** (Risco: Exposição de chave de API em ambiente público)
+
+Esses riscos podem causar vazamento de dados, comprometimento de sistemas e prejuízo financeiro.
 
 
 ## Como Executar Localmente
@@ -67,30 +79,23 @@ O workflow de segurança roda automaticamente em todo push/PR para o branch `mai
 
 
 
-## Demonstração Visual
 
-**Cenário 1:** Pull Request com código vulnerável (workflow falha)
+## Resultados Visuais e Prova de Conceito
 
+**Cenário 1:** [Image: GitHub Actions falhando ao detectar SQL Injection (Motivo: Alta Severidade)]
 ![Workflow Falhou](assets/screenshot-falha.png)
 
-
-
-**Cenário 2:** Pull Request corrigido (workflow passa)
-
+**Cenário 2:** [Image: GitHub Actions aprovando workflow após correção de vulnerabilidade]
 ![Workflow Sucesso](assets/success.jpg)
 
-### Dashboard Dinâmico
+> Se a imagem acima não aparecer no GitHub, salve uma cópia como PNG (`assets/success.png`), envie para o repositório e troque a linha acima para:
+> `![Workflow Sucesso](assets/success.png)`
 
-Badge de status do build:
 
-![Build Status](https://img.shields.io/github/workflow/status/MarcioGil/Sast-CI-CD-Pipeline/SAST%20Security%20Scan?style=flat-square)
+#### Status do Pipeline
 
-> Substitua os arquivos `assets/screenshot-falha.png` e `assets/screenshot-sucesso.png` pelas imagens reais dos seus workflows.
 
-![Build Status](https://img.shields.io/github/workflow/status/MarcioGil/Sast-CI-CD-Pipeline/SAST%20Security%20Scan?style=flat-square)
-
-> Substitua os arquivos `assets/screenshot-falha.png` e `assets/screenshot-sucesso.png` pelas imagens reais dos seus workflows.
 
 ## Impacto
 
-A automação previne que vulnerabilidades cheguem à produção, reduzindo a dívida de cibersegurança e promovendo boas práticas de desenvolvimento seguro.
+Essa abordagem previne a dívida de cibersegurança e economiza o alto custo de remediação de falhas em produção, conectando a segurança diretamente à economia de custos da empresa.
