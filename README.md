@@ -91,8 +91,13 @@ O workflow de segurança roda automaticamente em todo push/PR para o branch `mai
 > Se a imagem acima não aparecer no GitHub, salve uma cópia como PNG (`assets/success.png`), envie para o repositório e troque a linha acima para:
 > `![Workflow Sucesso](assets/success.png)`
 
+## Demonstração em Vídeo
 
-#### Status do Pipeline
+Veja abaixo um vídeo rápido mostrando o app vulnerável rodando, o commit e a transição do pipeline de falha para sucesso no GitHub Actions:
+
+[Clique para assistir](assets/demo.mp4)
+
+
 
 
 
