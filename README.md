@@ -97,13 +97,7 @@ O workflow de segurança roda automaticamente em todo push/PR para o branch `mai
 
 Veja abaixo um vídeo rápido mostrando o app vulnerável rodando, o commit e a transição do pipeline de falha para sucesso no GitHub Actions:
 
-Assista à demonstração diretamente pelo YouTube:
-
 [![Demonstração no YouTube](https://img.youtube.com/vi/V3i74OnXMDU/0.jpg)](https://youtu.be/V3i74OnXMDU)
-
-Ou clique no link abaixo:
-
-[https://youtu.be/V3i74OnXMDU](https://youtu.be/V3i74OnXMDU)
 
 
 
